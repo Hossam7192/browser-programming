@@ -4,28 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hossam Ali – Semantic HTML Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <nav>
+  <ul>
+    <li><a href="#main">Portfolio</a></li>
+    <li><a href="#main">Works</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
   </head>
 
   <body>
-    <!-- Skip link for accessibility -->
     <a href="#main">Skip to content</a>
 
-    <!-- Header section -->
     <header>
       <h1>Hossam Ali</h1>
-      <p>
-        IoT Engineering Student – Savonia University of Applied Sciences
-      </p>
+      <p>IoT Engineering Student – Savonia University of Applied Sciences</p>
       <p>
         Based in Kuopio, Finland. I am interested in IoT systems, embedded
-        devices, and learning web development fundamentals with a focus on
-        semantic HTML and accessibility.
+        devices, and building clear project pages using semantic HTML and
+        accessibility basics.
       </p>
     </header>
 
-    <!-- Main content -->
     <main id="main">
-      <!-- Portfolio / Works section -->
       <section>
         <h2>Portfolio / Works</h2>
 
@@ -33,9 +35,9 @@
           <h3>Browser Programming Course Projects</h3>
 
           <p>
-            This section presents examples of my work from the Browser
-            Programming course. The projects focus on correct structure,
-            semantic HTML elements, and accessibility basics.
+            This section shows examples of my work from the Browser Programming
+            course. The focus is on correct structure, semantic HTML elements,
+            and accessibility basics.
           </p>
 
           <ul>
@@ -52,7 +54,7 @@
 
           <figure>
             <img
-              src="images/browser-project.png"
+              src="./images/browser-project.png"
               alt="Screenshot of my browser programming repository on GitHub."
               width="400"
             />
@@ -65,21 +67,27 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Project demonstration video"
+              src="https://www.youtube.com/embed/jNQXAC9IVRw"
+              title="Embedded project demonstration video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
             <figcaption>
-              Embedded video demonstrating a simple project concept.
+              Embedded video demonstration. If it does not load, you can
+              <a
+                href="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+                target="_blank"
+                rel="noopener"
+              >
+                open the video on YouTube
+              </a>.
             </figcaption>
           </figure>
         </article>
       </section>
 
-      <!-- Areas of Interest section -->
       <section>
         <h2>Areas of Interest</h2>
-
         <ul>
           <li>Internet of Things (IoT)</li>
           <li>Embedded systems and Raspberry Pi</li>
@@ -90,10 +98,8 @@
       </section>
     </main>
 
-    <!-- Footer section -->
     <footer>
       <h2>Contact</h2>
-
       <ul>
         <li>
           <a
@@ -105,13 +111,11 @@
           </a>
         </li>
         <li>
-          <a href="mailto:hossamali7192@gmail.com">
-            hossamali7192@gmail.com
-          </a>
+          <a href="mailto:hossamali7192@gmail.com">hossamali7192@gmail.com</a>
         </li>
       </ul>
 
       <p>&copy; 2026 Hossam Ali</p>
-    </footer>
+    <footer id="contact">
   </body>
 </html>
