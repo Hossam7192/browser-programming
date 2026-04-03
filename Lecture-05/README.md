@@ -1,9 +1,9 @@
-# Lecture 04 – JavaScript Basics
+# Portfolio
 
-## Features implemented
-- Theme toggle button (light/dark mode)
-- Click counter button
+- Skills section added
+- Projects section added
+- Theme toggle with localStorage
+- Last updated using JavaScript
 
-## How to test
-1. Click "Toggle Theme" to switch between light and dark mode
-2. Click "Click Counter" to increase the counter (check console)
+Live:
+https://Hossam7192.github.io/browser-programming/Lecture-04-responsive/
