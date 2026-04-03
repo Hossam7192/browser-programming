@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hossam Ali – Semantic HTML Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <nav>
-  <ul>
-    <li><a href="#main">Portfolio</a></li>
-    <li><a href="#main">Works</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <a href="#main">Skip to content</a>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#main">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
     <header>
       <h1>Hossam Ali</h1>
@@ -25,8 +27,10 @@
         devices, and building clear project pages using semantic HTML and
         accessibility basics.
       </p>
+
       <button onclick="toggleTheme()">Toggle Theme</button>
       <button onclick="countClick()">Click Counter</button>
+      <p id="clickCountText">Clicks: 0</p>
     </header>
 
     <main id="main">
@@ -88,6 +92,46 @@
         </article>
       </section>
 
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">IoT</div>
+          <div class="skill-card">LTspice</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project-card">
+          <h3>Async JavaScript Demo</h3>
+          <p>
+            This project demonstrates asynchronous JavaScript using setTimeout,
+            Promise, async/await, and fetch.
+          </p>
+          <a
+            href="https://github.com/Hossam7192/browser-programming"
+            target="_blank"
+            rel="noopener"
+          >
+            View Project
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3>IoT Temperature System</h3>
+          <p>
+            This project uses Raspberry Pi and sensors to monitor temperature
+            and display the results clearly.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View Project</a>
+        </article>
+      </section>
+
       <section>
         <h2>Areas of Interest</h2>
         <ul>
@@ -100,7 +144,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="contact">
       <h2>Contact</h2>
       <ul>
         <li>
@@ -117,8 +161,10 @@
         </li>
       </ul>
 
+      <p id="lastUpdated"></p>
       <p>&copy; 2026 Hossam Ali</p>
-    <footer id="contact">
-  <script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
