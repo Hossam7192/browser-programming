@@ -87,3 +87,27 @@ body.dark-mode button {
   color: white;
   border: 1px solid #777;
 }
+#external-data {
+  margin-top: 30px;
+}
+
+#loadDataBtn {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+#apiOutput {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-height: 60px;
+}
+
+body.dark-mode #apiOutput,
+body.dark #apiOutput {
+  background-color: #222;
+  border-color: #555;
+}
