@@ -1,3 +1,4 @@
+console.log("weather js loaded");
 const cityText = document.getElementById("city");
 const temperatureText = document.getElementById("temperature");
 const windText = document.getElementById("wind");
@@ -17,7 +18,6 @@ document.getElementById("btnKuopio").onclick = function () {
 
 async function loadWeatherByCity(cityName, latitude, longitude) {
   clearOutput();
-  log("Loading weather data...");
 
   try {
     const url =
@@ -42,10 +42,6 @@ async function loadWeatherByCity(cityName, latitude, longitude) {
     temperatureText.textContent = temperature + " °C";
     windText.textContent = wind + " km/h";
 
-    clearOutput();
-    log("City: " + cityName);
-    log("Temperature: " + temperature + " °C");
-    log("Wind Speed: " + wind + " km/h);
 
   } catch (error) {
     clearOutput();
