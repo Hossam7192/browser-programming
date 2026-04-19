@@ -1,5 +1,4 @@
 const API_URL = "https://notes-app-backend-cpaq.onrender.com";
-
 async function loadNotes() {
   try {
     const response = await fetch(`${API_URL}/notes`);
