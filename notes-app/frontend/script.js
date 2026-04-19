@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://notes-app-backend-cpaq.onrender.com";
 
 async function loadNotes() {
   try {
