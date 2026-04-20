@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hossam Ali – Semantic HTML Portfolio</title>
     <link rel="stylesheet" href="exercise.css" />
-
   </head>
 
   <body>
@@ -77,18 +76,10 @@
               height="315"
               src="https://www.youtube.com/embed/jNQXAC9IVRw"
               title="Embedded project demonstration video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
             <figcaption>
-              Embedded video demonstration. If it does not load, you can
-              <a
-                href="https://www.youtube.com/watch?v=jNQXAC9IVRw"
-                target="_blank"
-                rel="noopener"
-              >
-                open the video on YouTube
-              </a>.
+              Embedded video demonstration.
             </figcaption>
           </figure>
         </article>
@@ -106,9 +97,11 @@
         </div>
       </section>
 
+      <!-- 🔥 PROJECTS SECTION -->
       <section id="projects">
         <h2>Projects</h2>
 
+        <!-- OLD PROJECT -->
         <article class="project-card">
           <h3>Async JavaScript Demo</h3>
           <p>
@@ -124,20 +117,59 @@
           </a>
         </article>
 
+        <!-- OLD PROJECT -->
         <article class="project-card">
           <h3>IoT Temperature System</h3>
           <p>
             This project uses Raspberry Pi and sensors to monitor temperature
             and display the results clearly.
           </p>
-          <a href="#" target="_blank" rel="noopener">View Project</a>
+          <a href="#" target="_blank">View Project</a>
+        </article>
+
+        <!-- ✅ NEW PROJECT -->
+        <article class="project-card">
+          <h3>Notes App (Full Stack)</h3>
+          <p>
+            A full-stack notes application built with Node.js, Express,
+            PostgreSQL (Supabase), and deployed using Render and Vercel.
+          </p>
+
+          <a href="https://browser-programming-ten.vercel.app/" target="_blank">
+            🔗 Live Demo
+          </a>
+          <br />
+          <a
+            href="https://github.com/Hossam7192/browser-programming"
+            target="_blank"
+          >
+            💻 GitHub Code
+          </a>
+        </article>
+
+        <!-- ✅ NEW PROJECT -->
+        <article class="project-card">
+          <h3>Expense Tracker (React + Vite)</h3>
+          <p>
+            A React application built with Vite to track daily expenses,
+            including categories, dates, and totals.
+          </p>
+
+          <a href="#" target="_blank">
+            🔗 Live Demo (Coming Soon)
+          </a>
+          <br />
+          <a href="https://github.com/Hossam7192" target="_blank">
+            💻 GitHub Code
+          </a>
         </article>
       </section>
+
       <section id="external-data">
         <h2>External Data Demo</h2>
         <button id="loadDataBtn">Load Data</button>
         <div id="apiOutput">Click "Load Data"</div>
-    </section>
+      </section>
 
       <section>
         <h2>Areas of Interest</h2>
@@ -158,13 +190,14 @@
           <a
             href="https://github.com/Hossam7192"
             target="_blank"
-            rel="noopener"
           >
             GitHub Profile
           </a>
         </li>
         <li>
-          <a href="mailto:hossamali7192@gmail.com">hossamali7192@gmail.com</a>
+          <a href="mailto:hossamali7192@gmail.com">
+            hossamali7192@gmail.com
+          </a>
         </li>
       </ul>
 
